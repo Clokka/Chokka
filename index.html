@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stylish Watch Gallery</title>
+  <style>
+    body {
+      background-color: #f3f4f6;
+      color: #1f2937;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    section.text-center {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    section.text-center a {
+      font-size: 1.2rem;
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Clokkalogo1.png" alt="Clokka Logo" />
+    <h1>Stylish Watch Gallery</h1>
+  </header>
+
+  <section class="text-center mb-10">
+    <p class="text-lg mb-4">Check out this featured watch on Amazon:</p>
+    <a href="https://www.amazon.com/dp/B09F9XF9CW" target="_blank">Shop on Amazon</a>
+  </section>
+
+  <section class="gallery">
+    <!-- Displaying only 8 stylish watch images -->
+    <img src="https://m.media-amazon.com/images/I/61QeNWSSHaL._AC_SL1001_.jpg" alt="Watch 1" />
+    <img src="https://m.media-amazon.com/images/I/51e6zi1LHWS._AC_UY900_.jpg" alt="Watch 2" />
+    <img src="https://m.media-amazon.com/images/I/61MPLojLuvL._AC_UY900_.jpg" alt="Watch 3" />
+    <img src="https://img.joomcdn.net/1cd733ba550706d4347035bdac4c705b3dd94514_original.jpeg" alt="Watch 4" />
+    <img src="https://img.joomcdn.net/68ae83a614824454044c578d941c43ca04b7cf5d_original.jpeg" alt="Watch 5" />
+    <img src="https://m.media-amazon.com/images/I/71UtS4nIV9L._AC_UY900_.jpg" alt="Watch 6" />
+    <img src="https://i.ebayimg.com/images/g/6tUAAOSwbdNlKqnV/s-l1200.jpg" alt="Watch 7" />
+    <img src="https://img.joomcdn.net/df55654a9ec8464a87b60afc9bdc741734c69e8d_original.jpeg" alt="Watch 8" />
+  </section>
+
+  <footer>
+    &copy; 2025 Stylish Watch Gallery
+  </footer>
+</body>
+</html>
